@@ -8,8 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.7" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\E-Commerce.InfrastructureEFCore\E-Commerce.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\E-Commerce.Services\E-Commerce.Services.csproj" />
   </ItemGroup>
 
 </Project>

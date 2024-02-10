@@ -5,19 +5,25 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce Project", "E-Commerce Project\E-Commerce Project.csproj", "{3F573FCD-6435-403D-84BE-D2DE97A4A352}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructures", "Infrastructures", "{29EE1516-75B8-4448-ACBD-2F2493FCB84B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{29EE1516-75B8-4448-ACBD-2F2493FCB84B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{DC79F579-72C3-4FDC-B027-39C60084A791}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{5BFEABF8-5333-4A2D-891C-57FE302A0C01}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{10F11C03-2168-496C-8B6B-482CFFC9440E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{10F11C03-2168-496C-8B6B-482CFFC9440E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.Domain", "E-Commerce.Domain\E-Commerce.Domain.csproj", "{CA850052-5126-48BF-9124-C1E0EB4F962A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.Domain", "E-Commerce.Domain\E-Commerce.Domain.csproj", "{CA850052-5126-48BF-9124-C1E0EB4F962A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.InfrastructureEFCore", "E-Commerce.InfrastructureEFCore\E-Commerce.InfrastructureEFCore.csproj", "{46025D1C-48DF-4ED4-BD17-62F3D84AE258}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.Infrastructure.Persistence", "E-Commerce.InfrastructureEFCore\E-Commerce.Infrastructure.Persistence.csproj", "{46025D1C-48DF-4ED4-BD17-62F3D84AE258}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Commerce.Services", "E-Commerce.Services\E-Commerce.Services.csproj", "{483F3A90-875E-4C44-B9E7-4CA826851C37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.Services", "E-Commerce.Services\E-Commerce.Services.csproj", "{483F3A90-875E-4C44-B9E7-4CA826851C37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{33F2F7BA-118D-4466-BF8B-F5ADEF62D0B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{DE016B24-AD16-4BDF-8D4B-C229E937BAB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Commerce.UnitTest", "E-Commerce.UnitTest\E-Commerce.UnitTest.csproj", "{17ECFE47-0669-4DD6-89E8-FC58EF913448}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,15 +47,22 @@ Global
 		{483F3A90-875E-4C44-B9E7-4CA826851C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{483F3A90-875E-4C44-B9E7-4CA826851C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{483F3A90-875E-4C44-B9E7-4CA826851C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17ECFE47-0669-4DD6-89E8-FC58EF913448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17ECFE47-0669-4DD6-89E8-FC58EF913448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17ECFE47-0669-4DD6-89E8-FC58EF913448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17ECFE47-0669-4DD6-89E8-FC58EF913448}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3F573FCD-6435-403D-84BE-D2DE97A4A352} = {10F11C03-2168-496C-8B6B-482CFFC9440E}
+		{DC79F579-72C3-4FDC-B027-39C60084A791} = {33F2F7BA-118D-4466-BF8B-F5ADEF62D0B6}
+		{5BFEABF8-5333-4A2D-891C-57FE302A0C01} = {33F2F7BA-118D-4466-BF8B-F5ADEF62D0B6}
 		{CA850052-5126-48BF-9124-C1E0EB4F962A} = {5BFEABF8-5333-4A2D-891C-57FE302A0C01}
 		{46025D1C-48DF-4ED4-BD17-62F3D84AE258} = {29EE1516-75B8-4448-ACBD-2F2493FCB84B}
 		{483F3A90-875E-4C44-B9E7-4CA826851C37} = {DC79F579-72C3-4FDC-B027-39C60084A791}
+		{17ECFE47-0669-4DD6-89E8-FC58EF913448} = {DE016B24-AD16-4BDF-8D4B-C229E937BAB1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7BB3C58E-6C38-4CA9-A3E4-5673D704ACAC}
